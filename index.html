@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Vue Mastery</title>
@@ -22,7 +22,9 @@
             <p v-if="inventory > 10">In Stock</p>
             <p v-else-if="inventory <= 10 && inventory > 0">Almost sold out!</p>
             <p v-else>Out of Stock</p>
-            <p v-if="onSale = false">On Sale</p>
+            <!-- solution -->
+            <p v-if="onSale">On Sale!</p>
+            <!-- solution -->
           </div>
         </div>
       </div>
